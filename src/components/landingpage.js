@@ -16,7 +16,7 @@ class Landing extends Component {
 
             <div className="banner-text">
               <h1>
-                Bachelor's in Technology(IT and MI) University of Delhi, 2021
+                Bachelor of Technology(IT and MI) University of Delhi, 2021
               </h1>
 
               <hr />

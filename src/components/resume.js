@@ -39,8 +39,13 @@ class Resume extends Component {
             <p>+91 9650691551, +91 7701837305</p>
             <h5>Email</h5>
             <p>aditnegi1@gmail.com, aditnegi1@ducic.ac.in</p>
-            <h5>Web</h5>
-            <p>mywebsite.com</p>
+            <h5>Resume</h5>
+            <a
+              href="https://drive.google.com/file/d/1c_DE-H439kGgPUME_SFTwJX_CsdGp5_9/view?usp=sharing"
+              class="button blue"
+            >
+              Click to check Resume
+            </a>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           </Cell>
           <Cell className="resume-right-col" col={8}>

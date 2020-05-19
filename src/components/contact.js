@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
-
+import Logo from "./adit.jpg";
 class Contact extends Component {
   render() {
     return (
@@ -8,11 +8,7 @@ class Contact extends Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Adit Negi</h2>
-            <img
-              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-              alt="avatar"
-              style={{ height: "250px" }}
-            />
+            <img src={Logo} alt="avatar" style={{ height: "500px" }} />
             <p style={{ width: "75%", margin: "auto", paddingTop: "1em" }}>
               I'm Adit an IT student from Cluster Innovation Centre, University
               of Delhi.
