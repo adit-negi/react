@@ -1,11 +1,26 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import Logo from "./aditt.jpg";
+import pdf from "./Adit_Negi_Resume_May2020.pdf";
+import { Button } from "react-bootstrap";
 
 class Landing extends Component {
   render() {
+    const styles = {
+      white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+      black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+      topBarHeight: 40,
+      footerMenuHeight: 50,
+    };
     return (
-      <div style={{ width: "100%", margin: "auto" }}>
+      <div
+        className="center-col"
+        style={{
+          backgroundColor: styles.black(0.05),
+          minHeight: "100vh",
+          position: "relative",
+        }}
+      >
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
@@ -25,6 +40,9 @@ class Landing extends Component {
                 Python | Keras | Algorithms | React | Django | NodeJS |
                 Tensorflow | MongoDB
               </p>
+              <Button variant="dark" size="sm" href={pdf}>
+                DOWNLOAD CV
+              </Button>
 
               <div className="social-links">
                 {/* LinkedIn */}
@@ -55,13 +73,6 @@ class Landing extends Component {
                 </a>
 
                 {/* Youtube */}
-                <a
-                  href="http://google.com"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <i className="fa fa-youtube-square" aria-hidden="true" />
-                </a>
               </div>
             </div>
           </Cell>

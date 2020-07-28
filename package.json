@@ -1,9 +1,11 @@
 {
+  "homepage": "http://adit-negi.github.io/react",
   "name": "myportfoliosite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-mdl": "^2.1.0",
     "react-router-dom": "^5.2.0",
@@ -13,6 +15,8 @@
     "gh-pages": "^2.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

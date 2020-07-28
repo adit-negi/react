@@ -10,7 +10,7 @@ import {
   CardActions,
   Button,
   CardMenu,
-  IconButton
+  IconButton,
 } from "react-mdl";
 
 class Projects extends Component {
@@ -21,15 +21,28 @@ class Projects extends Component {
 
   toggleCategories() {
     if (this.state.activeTab === 0) {
+      const styles = {
+        white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+        black: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+        topBarHeight: 40,
+        footerMenuHeight: 50,
+      };
       return (
-        <div className="projects-grid">
+        <div
+          className="projects-grid"
+          style={{
+            backgroundColor: styles.black(0.05),
+            minHeight: "100vh",
+            position: "relative",
+          }}
+        >
           {/* Project 1 */}
           <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
             <CardTitle
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Heuristic research using Sentimental analysis of the Oscars.
@@ -43,10 +56,12 @@ class Projects extends Component {
             <CardActions border></CardActions>
             <div class="container">
               <a
-                href="https://github.com/adit-negi/Sentimental-Analysis-of-2019-Oscars"
-                class="button blue"
+                href="http://www.github.com/adit-negi"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                _______________GitHub________________
+                Github
+                <i className="fa fa-github-square" aria-hidden="true" />
               </a>
             </div>
 
@@ -61,7 +76,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               COVID modelling using SIR and SIERD models
@@ -75,10 +90,12 @@ class Projects extends Component {
             <CardActions border></CardActions>
             <div class="container">
               <a
-                href="https://github.com/adit-negi/SIR_COVID_INDIA"
-                class="button blue"
+                href="http://www.github.com/adit-negi"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                _______________GitHub________________
+                Github
+                <i className="fa fa-github-square" aria-hidden="true" />
               </a>
             </div>
             <CardMenu style={{ color: "#fff" }}>
@@ -92,7 +109,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Textual analysis of financial reports(SEC/ EDGAR) .
@@ -107,10 +124,12 @@ class Projects extends Component {
             <CardActions border></CardActions>
             <div class="container">
               <a
-                href="https://github.com/adit-negi/Sentimental-Analysis-for-financial-texts"
-                class="button blue"
+                href="http://www.github.com/adit-negi"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                _______________GitHub________________
+                Github
+                <i className="fa fa-github-square" aria-hidden="true" />
               </a>
             </div>
             <CardMenu style={{ color: "#fff" }}>
@@ -128,7 +147,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Strategizing fantasy football, Moneyball Approach
@@ -157,7 +176,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Predicting the unpredicted, IPL.
@@ -188,7 +207,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Music Generation
@@ -222,7 +241,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Digital Impainting based on the Heat equation.
@@ -251,7 +270,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Analysis of dust collection on solar panels.
@@ -279,7 +298,7 @@ class Projects extends Component {
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "black"
+                background: "black",
               }}
             >
               Vehicle Routing Problem (VRP) Travelling around India
@@ -316,7 +335,7 @@ class Projects extends Component {
                 color: "#fff",
                 height: "176px",
                 background:
-                  "url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'l"
+                  "url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'l",
               }}
             >
               Event management React App.
@@ -349,7 +368,7 @@ class Projects extends Component {
       <div>
         <Tabs
           activeTab={this.state.activeTab}
-          onChange={tabId => this.setState({ activeTab: tabId })}
+          onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
         >
           <Tab>Data Science</Tab>

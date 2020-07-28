@@ -4,6 +4,8 @@ import Education from "./education";
 import Experience from "./experience";
 import Skills from "./skills";
 import logo from "./adit.jpg";
+import { Button } from "react-bootstrap";
+import pdf from "./Adit_Negi_Resume_May2020.pdf";
 
 class Resume extends Component {
   render() {
@@ -30,6 +32,9 @@ class Resume extends Component {
               internship. I'm proficient in python, also have experience with
               Django, React, MongoDB. Would love to work in AI or data science.
             </p>
+            <Button variant="dark" size="sm" href={pdf}>
+              DOWNLOAD CV
+            </Button>
             <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
             <h5>Address</h5>
             <p>
