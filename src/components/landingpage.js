@@ -31,8 +31,15 @@ class Landing extends Component {
 
             <div className="banner-text">
               <h1>
-                Bachelor of Technology(IT and MI) University of Delhi, 2021
+                This is no longer maintained please click on the link below
               </h1>
+            <a
+                  href="https://www.aditnegi.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  New Website
+                </a>
 
               <hr />
 
